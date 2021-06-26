@@ -2,7 +2,8 @@
   "name": "banking-api",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "ISC",
+  "license": "MIT",
+  "private": true,
   "description": "Template de API-Restfull com express e Node",
   "author": "Nathan Rodrigues Cavalcante",
   "scripts": {
