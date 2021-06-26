@@ -9,15 +9,18 @@ export default {
 
   // Stop running tests after `n` failures
   bail: true,
+  verbose: true,
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/tmp/jest_rs",
 
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
-
+  testEnvironment: "node",
+  preset: 'ts-jest',
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  collectCoverage: true,
+  testTimeout: 30000,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
