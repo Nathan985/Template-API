@@ -21,5 +21,21 @@ app.use(morgan("dev")); // Logs de Execução de Rotas
 
 app.use('/api', router); // Rotas da API com prefixo '/api'
 
+router.use((req, res, next) => {
+  const erro = new Error('Not Found')
+  next(erro)
+});
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 401)
+
+  return res.send({
+      error: {
+          success: 0,
+          mensagem: error.message
+      }
+  })
+})
+
 
 export { app };
