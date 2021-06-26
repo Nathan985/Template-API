@@ -1,9 +1,13 @@
 import express from 'express';
-import 'dotenv/config';
+import variables from 'dotenv';
 import cors from 'cors';
 import morgan from 'morgan';
 
 import { router } from './routes';
+
+variables.config({
+  path: process.env.NODE_ENV === 'test' ? '.env.test' : '.env'
+})
 
 const app = express();
 
