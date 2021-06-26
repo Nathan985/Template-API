@@ -1,8 +1,10 @@
 {
-  "name": "Banking-api",
+  "name": "banking-api",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "ISC",
+  "description": "Template de API-Restfull com express e Node",
+  "author": "Nathan Rodrigues Cavalcante",
   "scripts": {
     "start": "tsnd src/server.ts",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
