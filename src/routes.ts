@@ -4,7 +4,7 @@ const router = Router();
 
 // Rotas da API
 
-router.get('initialRoute', (req, res) => {
+router.get('/initialRoute', (req, res) => {
   res.status(200);
   return res.send({
     success: 1,
