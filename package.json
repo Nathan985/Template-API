@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "test": "jest"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
