@@ -6,7 +6,11 @@
     "allowJs": true,
     "lib": ["ES6"],
     "skipLibCheck": true,  
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": false,
+    "strictPropertyInitialization": false
   },
   "include": [
     "src/**/*.ts",
